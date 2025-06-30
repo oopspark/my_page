@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>나의 소개 홈페이지</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+  body {
+    margin: 0; padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #121212);
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .container {
+    background: #222233cc;
+    padding: 2rem 3rem;
+    border-radius: 16px;
+    box-shadow: 0 0 15px #00ffffaa;
+    max-width: 700px;
+    width: 90%;
+    text-align: center;
+  }
+
+  h1 {
+    margin-bottom: 0.2rem;
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffffbb;
+  }
+
+  h2 {
+    margin-top: 0;
+    font-weight: 400;
+    color: #a0f0f0;
+    font-size: 1.3rem;
+  }
+
+  .profile-img {
+    margin: 1.5rem auto 2rem;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 3px solid #00ffffcc;
+    box-shadow: 0 0 15px #00ffffcc;
+    object-fit: cover;
+  }
+
+  p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #cdeeffdd;
+    margin-bottom: 2rem;
+  }
+
+  .contact {
+    font-size: 1rem;
+    color: #88eeffcc;
+    margin-top: 1rem;
+  }
+
+  .contact a {
+    color: #00ffff;
+    text-decoration: none;
+    margin: 0 0.8rem;
+    transition: color 0.3s ease;
+  }
+  .contact a:hover {
+    color: #aaffff;
+  }
+
+  /* 반응형 */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem;
+    }
+    .container {
+      padding: 1.5rem 1.8rem;
+    }
+    .profile-img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>박지민</h1>
+    <h2>개발자 &amp; 데이터 분석가</h2>
+    <img
+      class="profile-img"
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAMAAAD/wTxpAAAAM1BMVEX////MzMyWlpazs7OLi4vT09O3t7fl5eXx8fHx8fHs7OzR0dHl5eXy8vJHR0eGhoapqamurq7p6el4fKfbAAAFTElEQVR4nO2d25ajMAyGHZpiULX//7zFJSbQlTd/zkT1c0IXTGwz4noHY5EmTJkiRJ0v8PsYFcQ5mW1ndB36v3+BlzP9nyE4xwqzsvQnx1NoBtPpCJx0td3Y41nCUKUcHkF2Sg8hT06qSAcEPN5ox8Ik/5ZAjcpA4Y3OD3mhMkfTLCeJyB16HwRYDHDG0lHChVTHqkmRc7So9BiGxlXwpKJl3q1zt+li47hh9HklFOehLBnSpPYyPNJUavYHAXVXZemK7tzVzh8f8AY6NyRReRBo9BHSZ2SZoLpM6mloSPWamwmOXEVQqj2nNUFrHaWKoXGu7WTbSx5kty6Fnwd5uVq6VPh5sVbj/6oGnhfYaJf7yDYBqGRldzvp1IU/9IGD4jPvJeSNoVGKkZT+rrkOwoFTijLaeQ6Mg+ATUFG7xmnVmmXgcPd82OEqfcy+PjAg3o1Rkln3m9B4U82fJ8fKQyJP4jh11RL7sv0u8OBjoZUR/qL9DPVZo+NI7QztQMH7F8OPbfUM6tDkWWPzyknkkthGdkLUJhN6F1lPX2UAbUtCkyT94ZXQCyCmgnjQ6sRrGE8N7u6DcIuBx8tOKX3FvmlpKFVtOk5uLGC80AwH4J4A6IBW63JQiMQXIn0Hb5YzC+VK0FqTrLGQJ2y7KhQkaXcrw1TZJ03r3EcMpoMpouXuzGw14QXHoDc3MS6Re45hNZzOnDRHq38sB/cIgj+Z7huIUqK4BkRVNw0TJ87OLYbCBQOv5Ik/L1TO1l4DYnsbBLptOVqpDOD7z3pIgZnRl1I/MCrG4MpLeZTEj+FGxKVLtNhvE1aWHlGLqlXtKj1J4EW2Nq0flK5oPrUJr+CAblvqO3jIBAlqq0i6bIv1zqgUnnHTvCuVwDcD0qvKqkHZcWPApjE9xTRMvC0FmfUF01mzK1VVPBXi0Gn1FqtOo1y8co+l1spc3Yw1VteJ6LnGJ+u1Gl1sf3s1Nk8HS9M+l7yqj+H3tQe8SZku3ZZrHmF6P81DrpCyTxNPow1Vcd8JlWJqR6hV3Eq3XbO4uG2urA9bZ0q2mrkT6u3Tg2FzBxnMf2p9x8nU5HGKxzU/BD8NJqX/1EceNwvzoEbT6QlaUZdVhF3LO5GP3QWdy7x10Aq4DbVjuN6Qv3Ln6+mSGJLPkebnH2aFqe4nW0cB0oLMk9+5PiLpQ6i1RG6RflCW0h3WrZB8EbvWvHdNF/PPGXQzt4Jr+czrwAzCQcbOX7S+2d/l8FHVqf4Ay56fP7jhbd0HeOJ1vP7P8FWkXgDVq/Tz4Wdi/DX7HGdCs7GLsAbv52o1RxclcqRO/g5idqgDq5Xc5Yp5PrkD6T7twQ7QMdLrIQFrjoRcPbihtV8NV6NsyNTMbfPh0OYPN30XuHbTqx/14h+HtKoLnq6f67kkpTl+9/qRz2DtJAlqbpMOfK4hc0/JkhG12zQqO7XyEo+rXtrn+g36Vn/jxZPOj+w66//yTDQdxLTzfVeOjhsVnkuAHRGqT3AHYMoV9HH7G8wG5uYMnQkXrv94pnxl4oHlu3qKIDTHe+hWbqWcS30EkNRmh17vUNfW5LPvEYwQ2HqupgzDZg9vnEx8Kz8Q2fIzoYmqLgG7+W1w5ApS5AblAvh1T2hZ7hgo7NJvEuF5Tb4vMP7HO+q5B3lB3l6+FYewPsPKvHm8yo/KK/kfPR7uE3P4Rz0H5d8nwRz2h3q3lGm9wcsP7pUfV7P4P5Pvp1sRuM/g04Xj8g6H2f1Dd/OHbz+5zL4r1M1DVv8AAAAASUVORK5CYII="
+      alt="프로필 사진"
+    />
+
+    <p>
+      안녕하세요! 저는 박지민입니다.<br />
+      개발과 데이터 분석을 사랑하며, 새로운 기술을 배우고 공유하는 것을 즐깁니다.<br />
+      이 홈페이지에서 저의 프로젝트와 경험을 소개합니다.
+    </p>
+
+    <div class="contact">
+      <a href="mailto:parkjimin@example.com">이메일</a> |
+      <a href="https://github.com/parkjimin" target="_blank" rel="noopener">GitHub</a> |
+      <a href="https://linkedin.com/in/parkjimin" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</body>
+</html>
