@@ -1,0 +1,61 @@
+index:
+  info:
+    mail: parkjimin@gmail.com
+  instroduction:
+    title: 나의_이름으로
+    file: life.md
+
+
+content:
+
+  - agriculture: 
+      title: 농업
+      sub:
+        - self:
+            title: 식량자급
+        - institution:
+            title: 제도
+        - trade:
+            title: 무역
+        - harvest:
+            title: 재배
+      
+  - academic:
+      title: 학술
+      sub: 
+        - master:
+            title: 석사
+        - gg:
+            title: 그래픽
+        - latex:
+            title: 텍스
+        - paper:
+            title: 논문
+
+
+  - relationship:
+      title: 관계
+      sub:
+        - community:
+            title: 지역
+        - america:
+            title: 미국
+        - china:
+            title: 중국
+        - world:
+            title: 세계
+
+    
+  - pathway:
+      title: 경로
+      sub: 
+        - risk:
+            title: 위험
+        - evaluation:
+            title: 평가
+        - structure:
+            title: 구조
+        - organization:
+            title: 조직
+      
+    
