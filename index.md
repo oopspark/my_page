@@ -10,7 +10,7 @@
 ## 학술
 
 - [석사](academic\master\master.md)
-- [그래픽](academic\gg\gg.md)
+- [그래픽](academic\gg\gg.html)
 - [텍스](academic\latex\latex.md)
 - [논문](academic\paper\paper.md)
 
